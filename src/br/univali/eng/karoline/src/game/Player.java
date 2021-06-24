@@ -1,6 +1,6 @@
-package br.univali.eng.karoline.model.game;
+package br.univali.eng.karoline.src.game;
 
-import br.univali.eng.karoline.model.enums.Position;
+import br.univali.eng.karoline.src.enums.Position;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -25,10 +25,19 @@ public class Player {
         this.goals = 0;
         this.age = age;
         this.attributes = new ArrayList<>();
-        attributes.add(firstAttribute);
+        attributes.add(calculateHeight(firstAttribute,position.name()));
         attributes.add(secondAttribute);
         this.skillPoints = position.calculateSkill(attributes.get(0),attributes.get(1));
     }
+
+    private int calculateHeight(int firstAttribute, String positionName){
+        if (positionName.toUpperCase().equals("GOLEIRO")){
+            return firstAttribute - 110;
+        } else{
+            return firstAttribute;
+        }
+    }
+
 
     public int getAge() {
         return age;
@@ -60,5 +69,18 @@ public class Player {
 
     public int getSecondAttribute() {
         return attributes.get(1);
+    }
+
+    @Override
+    public String toString() {
+        return "Player{" +
+                "name='" + name + '\'' +
+                ", position=" + position +
+                ", attributes=" + attributes +
+                ", skillPoints=" + skillPoints +
+                ", shirtNumber=" + shirtNumber +
+                ", goals=" + goals +
+                ", age=" + age +
+                '}';
     }
 }

@@ -1,4 +1,4 @@
-package br.univali.eng.karoline.model.enums;
+package br.univali.eng.karoline.src.enums;
 
 public enum Position {
     GOLEIRO(4,6),
