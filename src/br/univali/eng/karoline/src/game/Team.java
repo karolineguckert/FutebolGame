@@ -41,6 +41,7 @@ public class Team {
         Validator validator = new Validator();
         validator.validateTeamSize(players.size());
         validator.validatePositionName(positionName);
+        validator.validateTeamMembers(players,positionName.toUpperCase());
         validator.validateNumber(players,shirtNumber);
         firstAttributeValidator(positionName, firstAttribute);
         validator.validateAttributeValue(secondAttribute);

@@ -2,7 +2,9 @@ package br.univali.eng.karoline.src.validator;
 
 import br.univali.eng.karoline.src.enums.Position;
 import br.univali.eng.karoline.src.game.Player;
+import javafx.geometry.Pos;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Validator {
@@ -39,5 +41,37 @@ public class Validator {
         if (length > 5){
             throw new GameException("InvalidListBound", "Não é possível inserir mais que 5 jogadores em um time");
         }
+    }
+
+    private void validateAmountPosition(int count, Position position) throws GameException {
+        if (count == position.getMaximumPlayerPosition()){
+            throw new GameException("InvalidAmountPosition", "Não é possível inserir mais de " +
+                    position.getMaximumPlayerPosition() + " na posição de " + position.name());
+        }
+    }
+
+    public void validateTeamMembers(List<Player> players, String positionName) throws GameException {
+        int count;
+        if (positionName.equals(Position.DEFENSOR.name())) {
+            count = countMembers(players,Position.DEFENSOR);
+        } else {
+            if (positionName.equals(Position.ATACANTE.name())) {
+                count = countMembers(players,Position.ATACANTE);
+            } else {
+                count = countMembers(players,Position.GOLEIRO);
+            }
+        }
+        validateAmountPosition(count,Position.valueOf(positionName));
+    }
+
+    private int countMembers(List<Player> players, Position position){
+        int count = 0;
+        for (Player player : players) {
+            if (player.getPosition().equals(position)) {
+                count += 1;
+            }
+        }
+
+        return count;
     }
 }
