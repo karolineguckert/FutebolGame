@@ -17,6 +17,13 @@ public class Team {
         this.goals = 0;
     }
 
+    private void insertPLayersValidator(int shirtNumber, String positionName, int firstAttribute, int secondAttribute) throws  GameException {
+        Validator validator = new Validator();
+        validator.validateTeamSize(players.size());
+        validator.validateTeamMembers(players,positionName.toUpperCase());
+        validator.validateNumber(players,shirtNumber);
+    }
+
     public void insertPlayer(String name,
                              String positionName,
                              int firstAttribute,
@@ -27,7 +34,6 @@ public class Team {
        players.add(new Player(name, positionName, firstAttribute, secondAttribute, shirtNumber, age));
     }
 
-
     public void removePlayer(String name){
         for (int i = 0; i < players.size(); i++) {
             if(players.get(i).getName().equals(name)){
@@ -37,22 +43,13 @@ public class Team {
         }
     }
 
-    private void insertPLayersValidator(int shirtNumber, String positionName, int firstAttribute, int secondAttribute) throws  GameException {
-        Validator validator = new Validator();
-        validator.validateTeamSize(players.size());
-        validator.validatePositionName(positionName);
-        validator.validateTeamMembers(players,positionName.toUpperCase());
-        validator.validateNumber(players,shirtNumber);
-        firstAttributeValidator(positionName, firstAttribute);
-        validator.validateAttributeValue(secondAttribute);
-    }
-
-    private void firstAttributeValidator(String positionName, int firstAttribute) throws GameException {
-        Validator validator = new Validator();
-        if(positionName.toUpperCase().equals("GOLEIRO")) {
-            validator.validateHeightBound(firstAttribute);
-        }else {
-            validator.validateAttributeValue(firstAttribute);
+    public void makeScore(String name){
+        for (Player player : players) {
+            if (player.getName().equals(name)){
+                player.makeScore();
+                goals++;
+                break;
+            }
         }
     }
 
@@ -64,9 +61,11 @@ public class Team {
         return goals;
     }
 
-    public void show(){
+    public String show(){
+        StringBuilder result = new StringBuilder();
         for (Player player : players) {
-            System.out.println(player.toString());
+            result.append(player.toString()).append("\n");
         }
+        return result.toString();
     }
 }

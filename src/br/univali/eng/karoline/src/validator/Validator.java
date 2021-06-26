@@ -2,12 +2,28 @@ package br.univali.eng.karoline.src.validator;
 
 import br.univali.eng.karoline.src.enums.Position;
 import br.univali.eng.karoline.src.game.Player;
-import javafx.geometry.Pos;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class Validator {
+
+    private int countMembers(List<Player> players, Position position){
+        int count = 0;
+        for (Player player : players) {
+            if (player.getPosition().equals(position)) {
+                count += 1;
+            }
+        }
+        return count;
+    }
+
+    private void validateAmountPosition(int count, Position position) throws GameException {
+        if (count == position.getMaximumPlayerPosition()){
+            throw new GameException("InvalidAmountPosition", "Não é possível inserir mais de " +
+                    position.getMaximumPlayerPosition() + " na posição de " + position.name());
+        }
+    }
 
     public void validateNumber(List<Player> teams, int newNumber) throws GameException {
         for (Player team : teams) {
@@ -43,13 +59,6 @@ public class Validator {
         }
     }
 
-    private void validateAmountPosition(int count, Position position) throws GameException {
-        if (count == position.getMaximumPlayerPosition()){
-            throw new GameException("InvalidAmountPosition", "Não é possível inserir mais de " +
-                    position.getMaximumPlayerPosition() + " na posição de " + position.name());
-        }
-    }
-
     public void validateTeamMembers(List<Player> players, String positionName) throws GameException {
         int count;
         if (positionName.equals(Position.DEFENSOR.name())) {
@@ -62,16 +71,5 @@ public class Validator {
             }
         }
         validateAmountPosition(count,Position.valueOf(positionName));
-    }
-
-    private int countMembers(List<Player> players, Position position){
-        int count = 0;
-        for (Player player : players) {
-            if (player.getPosition().equals(position)) {
-                count += 1;
-            }
-        }
-
-        return count;
     }
 }

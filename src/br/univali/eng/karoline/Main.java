@@ -10,7 +10,7 @@ public class Main {
         team.insertPlayer("Junior","Defensor",100,0,2,13);
         team.insertPlayer("Marcos","Defensor",5,100,1,15);
         team.insertPlayer("Felipe","Goleiro",210,0,4,13);
-        team.insertPlayer("João","Defensor",1,100,5,15);
-        team.show();
+        team.insertPlayer("João","Atacante",1,100,5,15);
+        System.out.println(team.show());
     }
 }

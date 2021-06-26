@@ -1,6 +1,9 @@
 package br.univali.eng.karoline.src.game;
 
 import br.univali.eng.karoline.src.enums.Position;
+import br.univali.eng.karoline.src.validator.GameException;
+import br.univali.eng.karoline.src.validator.Validator;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -14,30 +17,50 @@ public class Player {
     private int age;
 
     public Player(String name,
-                  String namePosition,
+                  String positionName,
                   int firstAttribute,
                   int secondAttribute,
                   int shirtNumber,
-                  int age){
+                  int age) throws GameException {
+        Validator validator = new Validator();
+        validator.validatePositionName(positionName);
+        firstAttributeValidator(positionName, firstAttribute);
+        validator.validateAttributeValue(secondAttribute);
         this.name = name;
-        this.position = Position.valueOf(namePosition.toUpperCase());
+        this.position = Position.valueOf(positionName.toUpperCase());
         this.shirtNumber = shirtNumber;
         this.goals = 0;
         this.age = age;
         this.attributes = new ArrayList<>();
-        attributes.add(calculateHeight(firstAttribute,position.name()));
+        addFirstAttribute(positionName,firstAttribute);
         attributes.add(secondAttribute);
         this.skillPoints = position.calculateSkill(attributes.get(0),attributes.get(1));
     }
 
-    private int calculateHeight(int firstAttribute, String positionName){
-        if (positionName.toUpperCase().equals("GOLEIRO")){
-            return firstAttribute - 110;
-        } else{
-            return firstAttribute;
+    private void firstAttributeValidator(String positionName, int firstAttribute) throws GameException {
+        Validator validator = new Validator();
+        if(positionName.toUpperCase().equals("GOLEIRO")) {
+            validator.validateHeightBound(firstAttribute);
+        }else {
+            validator.validateAttributeValue(firstAttribute);
         }
     }
 
+    private void addFirstAttribute(String positionName, int firstAttribute){
+        if (positionName.toUpperCase().equals("GOLEIRO")) {
+            attributes.add(calculateHeight(firstAttribute, position.name()));
+        }else{
+            attributes.add(firstAttribute);
+        }
+    }
+
+    private int calculateHeight(int firstAttribute, String positionName){
+        return firstAttribute - 110;
+    }
+
+    public void makeScore(){
+        this.goals++;
+    }
 
     public int getAge() {
         return age;
