@@ -1,9 +1,8 @@
-package br.univali.eng.karoline;
+package br.univali.kob.eng;
 
-import br.univali.eng.karoline.src.game.Team;
+import br.univali.kob.eng.game.Team;
 
-
-public class Main {
+public class FutebolGameApplication {
 
     public static void main(String[] args) throws Exception {
         Team team = new Team("vikings");
@@ -15,4 +14,5 @@ public class Main {
         team.makeScore("joao");
         System.out.println(team.show());
     }
+
 }

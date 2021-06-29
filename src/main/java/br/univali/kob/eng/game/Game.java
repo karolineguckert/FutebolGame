@@ -1,4 +1,4 @@
-package br.univali.eng.karoline.src.game;
+package br.univali.kob.eng.game;
 
 import java.util.Date;
 import java.util.List;

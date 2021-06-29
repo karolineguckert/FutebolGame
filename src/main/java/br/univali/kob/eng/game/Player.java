@@ -1,7 +1,7 @@
-package br.univali.eng.karoline.src.game;
+package br.univali.kob.eng.game;
 
-import br.univali.eng.karoline.src.enums.Position;
-import br.univali.eng.karoline.src.exception.GameException;
+import br.univali.kob.eng.enums.Position;
+import br.univali.kob.eng.exception.GameException;
 
 import java.time.DateTimeException;
 import java.time.LocalDate;
