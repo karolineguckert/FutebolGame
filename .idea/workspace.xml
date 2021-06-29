@@ -23,12 +23,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/PlayerTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/FutebolGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FutebolGame.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JUnit5 Test Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -47,8 +60,11 @@
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.16992188" />
@@ -56,11 +72,17 @@
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="br.univali.kob.eng.game" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.PlayerTest">
     <configuration name="FutebolGameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.FutebolGameApplication" />
       <module name="FutebolGame" />
@@ -85,8 +107,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="PlayerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FutebolGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.FutebolGameApplication" />
       </list>
     </recent_temporary>
@@ -103,7 +141,7 @@
       <workItem from="1625004478538" duration="54000" />
       <workItem from="1625004547515" duration="35000" />
       <workItem from="1625004604511" duration="282000" />
-      <workItem from="1625004895243" duration="384000" />
+      <workItem from="1625004895243" duration="948000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -133,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625004999846</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="fix: language level to java 8">
+      <created>1625005697175</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1625005697175</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -156,7 +201,8 @@
     <MESSAGE value="refactor: removes .idea folder" />
     <MESSAGE value="fix: add .idea folder" />
     <MESSAGE value="fix: change workspace.xml" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: change workspace.xml" />
+    <MESSAGE value="fix: language level to java 8" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: language level to java 8" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
@@ -167,22 +213,22 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625004970196">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625005843231">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004970196" />
-    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625004970196">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625005843231">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004970196" />
-    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625004970196">
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625005843231">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004970196" />
-    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625004970196">
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625005843231">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004970196" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor" timestamp="1625004635663">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -191,5 +237,14 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005007796" />
+    <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625005751015">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005751015" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FutebolGame$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1625005843075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>br.univali.kob.eng.game.*</FILTER>
+    </SUITE>
   </component>
 </project>
