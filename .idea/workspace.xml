@@ -23,7 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,13 +63,24 @@
   <component name="RunManager">
     <configuration name="FutebolGameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.FutebolGameApplication" />
-      <module name="futebol-game" />
+      <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="br.univali.kob.eng.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -91,7 +102,8 @@
       <workItem from="1625003742300" duration="711000" />
       <workItem from="1625004478538" duration="54000" />
       <workItem from="1625004547515" duration="35000" />
-      <workItem from="1625004604511" duration="70000" />
+      <workItem from="1625004604511" duration="282000" />
+      <workItem from="1625004895243" duration="71000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -107,7 +119,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625004237086</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fix: add .idea folder">
+      <created>1625004691176</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1625004691176</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,13 +147,18 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="refactor: add maven structure" />
     <MESSAGE value="refactor: removes .idea folder" />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor: removes .idea folder" />
+    <MESSAGE value="fix: add .idea folder" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: add .idea folder" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl" timestamp="1625004579587">
+    <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004579587" />
+    <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004965549" />
+    <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl" timestamp="1625004881667">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
     <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625004453102">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -155,9 +179,9 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625004247574">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625004696186">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004247574" />
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004696186" />
   </component>
 </project>
