@@ -62,7 +62,7 @@ public class Team {
         validateNumber(players,shirtNumber);
     }
 
-    public void validateNumber(List<Player> teams, int newNumber) throws GameException {
+    private void validateNumber(List<Player> teams, int newNumber) throws GameException {
         for (Player team : teams) {
             if (team.getShirtNumber() == newNumber) {
                 throw new GameException("RepeatedShirtNumber", "O número de camiseta informado já existe no time");

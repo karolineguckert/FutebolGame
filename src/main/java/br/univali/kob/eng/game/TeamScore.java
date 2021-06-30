@@ -1,5 +1,7 @@
 package br.univali.kob.eng.game;
 
+//TODO o programa deve controlar os resultados
+//obtidos pelo time (vitórias, empates e derrotas)
 public class TeamScore {
 
     private final Team team;

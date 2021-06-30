@@ -23,8 +23,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/enums/PositionTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/TeamTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/PlayerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/PlayerTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,8 +77,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
-      <recent name="br.univali.kob.eng.enums" />
       <recent name="br.univali.kob.eng.game" />
+      <recent name="br.univali.kob.eng.enums" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -84,7 +87,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PositionTest">
+  <component name="RunManager" selected="JUnit.TeamTest">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -98,80 +101,80 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PlayerTest.makeScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.enums.*" />
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.enums" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.enums.PositionTest" />
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
+      <option name="METHOD_NAME" value="makeScoreTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FutebolGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTest.calculateSkillGoleiro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.getName" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.enums.*" />
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.enums" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.enums.PositionTest" />
-      <option name="METHOD_NAME" value="calculateSkillGoleiro" />
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
+      <option name="METHOD_NAME" value="getName" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTest.getMaximumPlayerPositionAtacante" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.makeScore" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.enums.*" />
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.enums" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.enums.PositionTest" />
-      <option name="METHOD_NAME" value="getMaximumPlayerPositionAtacante" />
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
+      <option name="METHOD_NAME" value="makeScore" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PositionTest.getMaximumPlayerPositionDefensor" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamTest.removePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.enums.*" />
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.enums" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.enums.PositionTest" />
-      <option name="METHOD_NAME" value="getMaximumPlayerPositionDefensor" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="PositionTest.getMaximumPlayerPositionGoleiro" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FutebolGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.enums.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.enums" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.enums.PositionTest" />
-      <option name="METHOD_NAME" value="getMaximumPlayerPositionGoleiro" />
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
+      <option name="METHOD_NAME" value="removePlayer" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -179,11 +182,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PositionTest" />
-        <item itemvalue="JUnit.PositionTest.getMaximumPlayerPositionDefensor" />
-        <item itemvalue="JUnit.PositionTest.getMaximumPlayerPositionAtacante" />
-        <item itemvalue="JUnit.PositionTest.getMaximumPlayerPositionGoleiro" />
-        <item itemvalue="JUnit.PositionTest.calculateSkillGoleiro" />
+        <item itemvalue="JUnit.TeamTest" />
+        <item itemvalue="JUnit.TeamTest.removePlayer" />
+        <item itemvalue="JUnit.TeamTest.makeScore" />
+        <item itemvalue="JUnit.PlayerTest.makeScoreTest" />
+        <item itemvalue="JUnit.TeamTest.getName" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +205,7 @@
       <workItem from="1625004895243" duration="6102000" />
       <workItem from="1625052050585" duration="32000" />
       <workItem from="1625061385770" duration="7087000" />
-      <workItem from="1625081411012" duration="1509000" />
+      <workItem from="1625081411012" duration="3552000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -274,7 +277,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625082336339</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="tests: Implementado testes da enum Position">
+      <created>1625082988223</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1625082988223</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -303,7 +313,8 @@
     <MESSAGE value="feat: Criado um campeonato para suprir o requisito &#10;&#10;O programa deve permitir cadastrar várias partidas e depois simular a execução destas partidas" />
     <MESSAGE value="tests: Correções nos testes" />
     <MESSAGE value="tests: implementado teste de data fora do padrão" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: implementado teste de data fora do padrão" />
+    <MESSAGE value="tests: Implementado testes da enum Position" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests: Implementado testes da enum Position" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
@@ -318,22 +329,22 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625082953718">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625084962884">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625082953718" />
-    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625082953718">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084962884" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625084962884">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625082953718" />
-    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625082953718">
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084962884" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625084962884">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625082953718" />
-    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625082953718">
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084962884" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625084962884">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625082953718" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084962884" />
     <state width="1878" height="347" key="GridCell.Tab.1.bottom" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -354,18 +365,18 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625070247759">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625083025437">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070247759" />
-    <state x="154" y="107" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625082368380">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625083025437" />
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625084483351">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="154" y="107" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625082368380" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625068249572">
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084483351" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625084712216">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625068249572" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084712216" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FutebolGame$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1625005843075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
