@@ -14,7 +14,6 @@ public class FutebolGameApplication {
         teamA.insertPlayer("Joao","Atacante",99,100,5,"15/12/2000");
         System.out.println(teamA.show());
 
-
         Team teamB = new Team("japoneses");
         teamB.insertPlayer("Goku","Defensor",0,0,2,"26/06/2021");
         teamB.insertPlayer("Gohan","Defensor",0,0,1,"15/12/2000");
@@ -29,7 +28,6 @@ public class FutebolGameApplication {
         championship.simulateGames();
 
         System.out.println(championship);
-
     }
 
 }

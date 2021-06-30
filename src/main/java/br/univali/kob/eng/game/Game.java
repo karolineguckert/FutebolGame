@@ -78,7 +78,7 @@ public class Game {
         return new Team[] { visitorTeam, homeTeam };
     }
 
-    private <T> int getRandomNumber(int max) {
+    private int getRandomNumber(int max) {
         int min = 0;
         return (int) ((Math.random() * (max - min)) + min);
     }

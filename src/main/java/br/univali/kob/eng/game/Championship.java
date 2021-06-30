@@ -57,7 +57,7 @@ public class Championship {
         }
     }
 
-    private TeamScore getTeamScore(Team team) {
+    public TeamScore getTeamScore(Team team) {
         Optional<TeamScore> optionalTeamScore = teamScoreList.stream()
                 .filter(teamScore -> teamScore.getTeam().equals(team)).findFirst();
 
