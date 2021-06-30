@@ -1,7 +1,7 @@
 package br.univali.kob.eng.game;
 
 /**
- * Apresenta o resultado de um jogo
+ * Define o resultado de um jogo
  */
 public class GameResult {
 
