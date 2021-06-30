@@ -23,9 +23,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/TeamScoreTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Championship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Championship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -86,7 +85,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.FutebolGameApplication">
+  <component name="RunManager" selected="JUnit.TeamScoreTest">
     <configuration name="FutebolGameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.FutebolGameApplication" />
       <module name="FutebolGame" />
@@ -111,7 +110,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.makeScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TeamScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
         <pattern>
@@ -120,9 +119,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
-      <option name="METHOD_NAME" value="makeScoreTest" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamScoreTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -176,11 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TeamScoreTest" />
         <item itemvalue="Application.FutebolGameApplication" />
         <item itemvalue="JUnit.TeamTest" />
         <item itemvalue="JUnit.TeamTest.removePlayer" />
         <item itemvalue="JUnit.TeamTest.makeScore" />
-        <item itemvalue="JUnit.PlayerTest.makeScoreTest" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +199,7 @@
       <workItem from="1625061385770" duration="7087000" />
       <workItem from="1625081411012" duration="3676000" />
       <workItem from="1625085867968" duration="630000" />
-      <workItem from="1625089784711" duration="1458000" />
+      <workItem from="1625089784711" duration="1706000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -287,7 +285,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625085091615</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: implementado requisito de controle de vitorias, derrotas e empates">
+      <created>1625092293263</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1625092293263</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -318,17 +323,22 @@
     <MESSAGE value="tests: implementado teste de data fora do padrão" />
     <MESSAGE value="tests: Implementado testes da enum Position" />
     <MESSAGE value="tests: Implementado testes da classe Team" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: Implementado testes da classe Team" />
+    <MESSAGE value="feat: implementado requisito de controle de vitorias, derrotas e empates" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: implementado requisito de controle de vitorias, derrotas e empates" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="603" y="256" width="710" height="540" key="#File_and_Code_Templates" timestamp="1625092368385">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="603" y="256" width="710" height="540" key="#File_and_Code_Templates/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092368385" />
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004965549" />
-    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1625092004112">
+    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1625092341091">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092004112" />
+    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092341091" />
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl" timestamp="1625004881667">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -373,10 +383,10 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625090018936" />
-    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625084483351">
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625092359232">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084483351" />
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092359232" />
     <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625084712216">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>

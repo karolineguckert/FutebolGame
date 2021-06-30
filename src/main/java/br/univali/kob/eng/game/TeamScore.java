@@ -40,6 +40,18 @@ public class TeamScore {
         this.draws++;
     }
 
+    public int getVictories() {
+        return victories;
+    }
+
+    public int getDefeats() {
+        return defeats;
+    }
+
+    public int getDraws() {
+        return draws;
+    }
+
     @Override
     public String toString() {
         return "TeamScore{" +
