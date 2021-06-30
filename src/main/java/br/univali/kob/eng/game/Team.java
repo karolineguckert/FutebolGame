@@ -5,6 +5,7 @@ import br.univali.kob.eng.exception.GameException;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class Team {
     private List<Player> players;
@@ -79,12 +80,14 @@ public class Team {
         return count;
     }
 
-    public void insertPlayer(String name,
-                             String positionName,
-                             int firstAttribute,
-                             int secondAttribute,
-                             int shirtNumber,
-                             String age) throws GameException {
+    public void insertPlayer(
+         String name,
+         String positionName,
+         int firstAttribute,
+         int secondAttribute,
+         int shirtNumber,
+         String age
+    ) throws GameException {
         validateInsertPLayers(shirtNumber, positionName);
        players.add(new Player(name, positionName, firstAttribute, secondAttribute, shirtNumber, age));
     }
@@ -120,11 +123,24 @@ public class Team {
         return goals;
     }
 
+    public List<Player> getPlayersByPosition(Position position) {
+        return players.stream()
+                .filter(player -> player.getPosition().equals(position)).collect(Collectors.toList());
+    }
+
     public String show(){
         StringBuilder result = new StringBuilder();
         for (Player player : players) {
             result.append(player.toString()).append("\n");
         }
         return result.toString();
+    }
+
+    @Override
+    public String toString() {
+        return "Team{" +
+                " name='" + name + '\'' +
+                ", goals=" + goals +
+                '}';
     }
 }
