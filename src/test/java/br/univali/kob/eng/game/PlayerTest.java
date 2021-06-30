@@ -9,14 +9,13 @@ import java.time.format.DateTimeFormatter;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-//TODO - Data com padrão errado
-//Testar se calcula a data certo
 class PlayerTest {
 
     private static final String INVALID_POSITION_MESSAGE = "PositionNotFound: A posição que foi inserida não existe ou está escrita de forma equivocada";
     private static final String INVALID_HEIGHT_MESSAGE = "InvalidHeightBound: Altura do Goleiro está fora do intervalo permitido. A altura deve ser Maior igual a 110cm, e Menor igual a 210cm";
     private static final String INVALID_ATTRIBUTE_MESSAGE = "InvalidAttributeBound: O valor inserido para o atributo deve estar de 0 á 100";
     private static final String INVALID_DATE_MESSAGE = "InvalidDateValue: Não é possível inserir uma data após o dia de hoje ou igual";
+    private static final String INVALID_DATE_PATTERN_MESSAGE = "InvalidDateValue: Formato de data inserido sai do padrão dd/MM/yyyy";
 
     @Test
     void createPlayerWithWrongPositionName() {
@@ -70,6 +69,17 @@ class PlayerTest {
                     new Player("Felipe","Atacante",3,0,4, todayPlusFiveDays);
                 },
                 INVALID_DATE_MESSAGE
+        );
+    }
+
+    @Test
+    void createPlayerWithInvalidDatePattern() {
+        assertThrows(
+                GameException.class,
+                () -> {
+                    new Player("Felipe","Atacante",10,0,4, "02022000");
+                },
+                INVALID_DATE_PATTERN_MESSAGE
         );
     }
 

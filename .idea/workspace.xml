@@ -83,14 +83,16 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest.createPlayerWithInvalidDate">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.PlayerTest.createPlayerWithInvalidDatePattern">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,22 +112,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PlayerTest.createPlayerWithInvalidAttributeValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FutebolGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
-      <option name="METHOD_NAME" value="createPlayerWithInvalidAttributeValue" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="PlayerTest.createPlayerWithInvalidDate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
@@ -137,6 +123,22 @@
       <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
       <option name="METHOD_NAME" value="createPlayerWithInvalidDate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="PlayerTest.createPlayerWithInvalidDatePattern" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FutebolGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.PlayerTest" />
+      <option name="METHOD_NAME" value="createPlayerWithInvalidDatePattern" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -176,11 +178,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.PlayerTest.createPlayerWithInvalidDatePattern" />
         <item itemvalue="JUnit.PlayerTest.createPlayerWithInvalidDate" />
         <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="JUnit.PlayerTest.createPlayerWithInvalidSecondAttributeValue" />
         <item itemvalue="JUnit.PlayerTest.createPlayerWithValidAttributeValue" />
-        <item itemvalue="JUnit.PlayerTest.createPlayerWithInvalidAttributeValue" />
       </list>
     </recent_temporary>
   </component>
@@ -199,6 +201,7 @@
       <workItem from="1625004895243" duration="6102000" />
       <workItem from="1625052050585" duration="32000" />
       <workItem from="1625061385770" duration="7087000" />
+      <workItem from="1625081411012" duration="794000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -256,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625067672147</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="tests: Correções nos testes">
+      <created>1625070244342</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1625070244342</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -283,7 +293,8 @@
     <MESSAGE value="feat: add first test" />
     <MESSAGE value="feat: Criado simulação do jogo junto com a regra para definir qual time ganha" />
     <MESSAGE value="feat: Criado um campeonato para suprir o requisito &#10;&#10;O programa deve permitir cadastrar várias partidas e depois simular a execução destas partidas" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: Criado um campeonato para suprir o requisito &#10;&#10;O programa deve permitir cadastrar várias partidas e depois simular a execução destas partidas" />
+    <MESSAGE value="tests: Correções nos testes" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests: Correções nos testes" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
@@ -298,46 +309,46 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625069923971">
+    <state width="1878" height="347" key="GridCell.Tab.0.bottom" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625069923971" />
-    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625069923971">
+    <state width="1878" height="347" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
+    <state width="1878" height="347" key="GridCell.Tab.0.center" timestamp="1625070254924">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625069923971" />
-    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625069923971">
+    <state width="1878" height="347" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254924" />
+    <state width="1878" height="347" key="GridCell.Tab.0.left" timestamp="1625070254924">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625069923971" />
-    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625069923971">
+    <state width="1878" height="347" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254924" />
+    <state width="1878" height="347" key="GridCell.Tab.0.right" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625069923971" />
-    <state width="1878" height="347" key="GridCell.Tab.1.bottom" timestamp="1625065005331">
+    <state width="1878" height="347" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
+    <state width="1878" height="347" key="GridCell.Tab.1.bottom" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005331" />
-    <state width="1878" height="347" key="GridCell.Tab.1.center" timestamp="1625065005330">
+    <state width="1878" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
+    <state width="1878" height="347" key="GridCell.Tab.1.center" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="347" key="GridCell.Tab.1.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005330" />
-    <state width="1878" height="347" key="GridCell.Tab.1.left" timestamp="1625065005330">
+    <state width="1878" height="347" key="GridCell.Tab.1.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
+    <state width="1878" height="347" key="GridCell.Tab.1.left" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="347" key="GridCell.Tab.1.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005330" />
-    <state width="1878" height="347" key="GridCell.Tab.1.right" timestamp="1625065005331">
+    <state width="1878" height="347" key="GridCell.Tab.1.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
+    <state width="1878" height="347" key="GridCell.Tab.1.right" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="347" key="GridCell.Tab.1.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005331" />
+    <state width="1878" height="347" key="GridCell.Tab.1.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070254925" />
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor" timestamp="1625004635663">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625070132300">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625070247759">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070132300" />
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070247759" />
     <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625005751015">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
