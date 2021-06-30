@@ -23,9 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/GameResultTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/GameTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/mock/TeamMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/GameResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/GameResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +36,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -85,7 +86,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameResultTest">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration name="FutebolGameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.FutebolGameApplication" />
       <module name="FutebolGame" />
@@ -125,6 +126,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FutebolGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.GameTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GameTest.simulate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="FutebolGame" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
+      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.GameTest" />
+      <option name="METHOD_NAME" value="simulate" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TeamScoreTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="FutebolGame" />
       <extension name="coverage">
@@ -140,44 +172,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FutebolGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TeamTest.removePlayer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="FutebolGame" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="br.univali.kob.eng.game.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="br.univali.kob.eng.game" />
-      <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.game.TeamTest" />
-      <option name="METHOD_NAME" value="removePlayer" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.GameTest" />
+        <item itemvalue="JUnit.GameTest.simulate" />
         <item itemvalue="JUnit.GameResultTest" />
         <item itemvalue="JUnit.TeamScoreTest" />
         <item itemvalue="Application.FutebolGameApplication" />
-        <item itemvalue="JUnit.TeamTest" />
-        <item itemvalue="JUnit.TeamTest.removePlayer" />
       </list>
     </recent_temporary>
   </component>
@@ -198,7 +199,7 @@
       <workItem from="1625061385770" duration="7087000" />
       <workItem from="1625081411012" duration="3676000" />
       <workItem from="1625085867968" duration="630000" />
-      <workItem from="1625089784711" duration="2324000" />
+      <workItem from="1625089784711" duration="3099000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -298,7 +299,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625092584763</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="tests: implementado testes da classe GameResult">
+      <created>1625093133384</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1625093133384</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -331,7 +339,8 @@
     <MESSAGE value="tests: Implementado testes da classe Team" />
     <MESSAGE value="feat: implementado requisito de controle de vitorias, derrotas e empates" />
     <MESSAGE value="tests: implementado testes da classe TeamScore" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: implementado testes da classe TeamScore" />
+    <MESSAGE value="tests: implementado testes da classe GameResult" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests: implementado testes da classe GameResult" />
   </component>
   <component name="WindowStateProjectService">
     <state x="603" y="256" width="710" height="540" key="#File_and_Code_Templates" timestamp="1625092368385">
@@ -350,22 +359,22 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625092616055">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625093865306">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092616055" />
-    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625092616055">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093865306" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625093865306">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092616055" />
-    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625092616055">
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093865306" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625093865306">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092616055" />
-    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625092616055">
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093865306" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625093865306">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092616055" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093865306" />
     <state width="1878" height="347" key="GridCell.Tab.1.bottom" timestamp="1625070254925">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
@@ -386,18 +395,18 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625090018936">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625093137629">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625090018936" />
-    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625092656508">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093137629" />
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625093203958">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625092656508" />
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625084712216">
+    <state x="618" y="130" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093203958" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625093481692">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625084712216" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625093481692" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FutebolGame$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1625005843075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

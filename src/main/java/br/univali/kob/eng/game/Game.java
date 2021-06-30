@@ -12,7 +12,6 @@ public class Game {
     private final Team homeTeam;
     private final LocalDateTime date;
     private TeamAttacking teamAttacking;
-    private GameResult result;
 
     public Game(Team visitorTeam, Team homeTeam){
         this.date = LocalDateTime.now();
@@ -53,8 +52,7 @@ public class Game {
             toggleTeamAttacking();
         }
 
-        this.result = new GameResult(this);
-        return this.result;
+        return new GameResult(this);
     }
 
     public LocalDateTime getDate() {
@@ -69,10 +67,6 @@ public class Game {
         return homeTeam;
     }
 
-    public GameResult getResult() {
-        return result;
-    }
-
     private void toggleTeamAttacking() {
         this.teamAttacking = this.teamAttacking.equals(TeamAttacking.HOME) ? TeamAttacking.VISITOR : TeamAttacking.HOME;
     }
@@ -84,7 +78,7 @@ public class Game {
         return new Team[] { visitorTeam, homeTeam };
     }
 
-    public <T> int getRandomNumber(int max) {
+    private <T> int getRandomNumber(int max) {
         int min = 0;
         return (int) ((Math.random() * (max - min)) + min);
     }
