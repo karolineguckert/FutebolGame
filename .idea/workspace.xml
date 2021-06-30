@@ -23,13 +23,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apiguardian_apiguardian_api_1_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_jupiter_junit_jupiter_api_5_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_junit_platform_junit_platform_commons_1_7_2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_opentest4j_opentest4j_1_2_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/PlayerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/FutebolGame.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/FutebolGame.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Championship.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/GameResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamAttacking.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Team.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -82,7 +84,7 @@
       <recent name="$PROJECT_DIR$/src/main/java/br/univali/kob/eng" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.PlayerTest">
+  <component name="RunManager" selected="Application.FutebolGameApplication">
     <configuration name="FutebolGameApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="br.univali.kob.eng.FutebolGameApplication" />
       <module name="FutebolGame" />
@@ -124,8 +126,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.PlayerTest" />
         <item itemvalue="Application.FutebolGameApplication" />
+        <item itemvalue="JUnit.PlayerTest" />
       </list>
     </recent_temporary>
   </component>
@@ -141,7 +143,9 @@
       <workItem from="1625004478538" duration="54000" />
       <workItem from="1625004547515" duration="35000" />
       <workItem from="1625004604511" duration="282000" />
-      <workItem from="1625004895243" duration="948000" />
+      <workItem from="1625004895243" duration="6102000" />
+      <workItem from="1625052050585" duration="32000" />
+      <workItem from="1625061385770" duration="4715000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -178,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625005697175</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: add first test">
+      <created>1625005866897</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1625005866897</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -202,45 +213,70 @@
     <MESSAGE value="fix: add .idea folder" />
     <MESSAGE value="fix: change workspace.xml" />
     <MESSAGE value="fix: language level to java 8" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix: language level to java 8" />
+    <MESSAGE value="feat: add first test" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add first test" />
   </component>
   <component name="WindowStateProjectService">
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1625004965549">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="418" y="185" width="1084" height="732" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004965549" />
+    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser" timestamp="1625067496241">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="768" y="231" width="502" height="589" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625067496241" />
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl" timestamp="1625004881667">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="743" y="285" width="430" height="481" key="FileChooserDialogImpl/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004881667" />
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625005843231">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom" timestamp="1625067517035">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
-    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625005843231">
+    <state width="1878" height="281" key="GridCell.Tab.0.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625067517035" />
+    <state width="1878" height="281" key="GridCell.Tab.0.center" timestamp="1625067517035">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
-    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625005843231">
+    <state width="1878" height="281" key="GridCell.Tab.0.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625067517035" />
+    <state width="1878" height="281" key="GridCell.Tab.0.left" timestamp="1625067517035">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
-    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625005843231">
+    <state width="1878" height="281" key="GridCell.Tab.0.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625067517035" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right" timestamp="1625067517035">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005843231" />
+    <state width="1878" height="281" key="GridCell.Tab.0.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625067517035" />
+    <state width="1878" height="347" key="GridCell.Tab.1.bottom" timestamp="1625065005331">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="347" key="GridCell.Tab.1.bottom/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005331" />
+    <state width="1878" height="347" key="GridCell.Tab.1.center" timestamp="1625065005330">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="347" key="GridCell.Tab.1.center/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005330" />
+    <state width="1878" height="347" key="GridCell.Tab.1.left" timestamp="1625065005330">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="347" key="GridCell.Tab.1.left/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005330" />
+    <state width="1878" height="347" key="GridCell.Tab.1.right" timestamp="1625065005331">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="347" key="GridCell.Tab.1.right/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625065005331" />
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor" timestamp="1625004635663">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625005007796">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625005873332">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005007796" />
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005873332" />
     <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625005751015">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005751015" />
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup" timestamp="1625064892889">
+      <screen x="0" y="0" width="1920" height="1053" />
+    </state>
+    <state x="623" y="232" width="672" height="678" key="search.everywhere.popup/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625064892889" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/FutebolGame$PlayerTest.ic" NAME="PlayerTest Coverage Results" MODIFIED="1625005843075" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
