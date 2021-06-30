@@ -23,14 +23,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="360f8777-d64a-4190-94c0-e9af6404a329" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/ChampionshipTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/mock/GameMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/FutebolGameApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Championship.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Championship.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/GameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/game/GameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/mock/TeamMock.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/br/univali/kob/eng/mock/TeamMock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/univali/kob/eng/game/TeamScore.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -200,7 +196,7 @@
       <workItem from="1625061385770" duration="7087000" />
       <workItem from="1625081411012" duration="3676000" />
       <workItem from="1625085867968" duration="630000" />
-      <workItem from="1625089784711" duration="5407000" />
+      <workItem from="1625089784711" duration="5675000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: add maven structure">
       <created>1625004147608</created>
@@ -314,7 +310,14 @@
       <option name="project" value="LOCAL" />
       <updated>1625093909747</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="tests: implementado testes da classe Championship">
+      <created>1625096209494</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1625096209494</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -349,7 +352,8 @@
     <MESSAGE value="tests: implementado testes da classe TeamScore" />
     <MESSAGE value="tests: implementado testes da classe GameResult" />
     <MESSAGE value="tests: implementado testes da classe Game" />
-    <option name="LAST_COMMIT_MESSAGE" value="tests: implementado testes da classe Game" />
+    <MESSAGE value="tests: implementado testes da classe Championship" />
+    <option name="LAST_COMMIT_MESSAGE" value="tests: implementado testes da classe Championship" />
   </component>
   <component name="WindowStateProjectService">
     <state x="603" y="256" width="710" height="540" key="#File_and_Code_Templates" timestamp="1625092368385">

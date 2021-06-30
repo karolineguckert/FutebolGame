@@ -1,5 +1,8 @@
 package br.univali.kob.eng.game;
 
+/**
+ * Define o Score de um time
+ */
 public class TeamScore {
 
     private final Team team;
@@ -24,18 +27,31 @@ public class TeamScore {
         return score;
     }
 
+    /**
+     * Incrementa o Score do time
+     * @param valueToSum valor para somar ao score atual
+     */
     public void sumScore(int valueToSum) {
         score += valueToSum;
     }
 
+    /**
+     * Incrementa o numero de vitorias em 1
+     */
     public void sumVictories() {
         this.victories++;
     }
 
+    /**
+     * Incrementa o numero de derrotas em 1
+     */
     public void sumDefeats() {
         this.defeats++;
     }
 
+    /**
+     * Incrementa o numero de empates em 1
+     */
     public void sumDraws() {
         this.draws++;
     }

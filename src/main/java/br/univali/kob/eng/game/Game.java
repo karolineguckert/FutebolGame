@@ -6,6 +6,9 @@ import br.univali.kob.eng.exception.GameException;
 import java.time.LocalDateTime;
 import java.util.List;
 
+/**
+ * Define um Jogo
+ */
 public class Game {
 
     private final Team visitorTeam;

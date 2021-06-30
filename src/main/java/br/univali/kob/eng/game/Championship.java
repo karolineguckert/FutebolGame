@@ -19,6 +19,12 @@ public class Championship {
         this.teamScoreList = new ArrayList<>();
     }
 
+    /**
+     * Insere um jogo no campeonato
+     * O jogo só será inserido caso
+     * não esteja na lista de jogos
+     * @param game Jogo para inserir
+     */
     public void insertGame(Game game) {
         if (!games.contains(game)) {
             games.add(game);
@@ -27,6 +33,9 @@ public class Championship {
         }
     }
 
+    /**
+     * Simula todos os jogos inseridos e atualiza seus scores
+     */
     public void simulateGames() throws GameException {
         for (Game game: games) {
             GameResult result = game.simulate();
@@ -47,21 +56,30 @@ public class Championship {
         }
     }
 
+    /**
+     * Retorna o score de todos os times
+     * @return List de TeamScore
+     */
     public List<TeamScore> getTeamScoreList() {
         return teamScoreList;
+    }
+
+    /**
+     * Retorna o Score de um time em especifico
+     * @param team Time pare ver o score
+     * @return Score do time
+     */
+    public TeamScore getTeamScore(Team team) {
+        Optional<TeamScore> optionalTeamScore = teamScoreList.stream()
+                .filter(teamScore -> teamScore.getTeam().equals(team)).findFirst();
+
+        return optionalTeamScore.orElse(null);
     }
 
     private void addTeamToScoreList(Team team) {
         if (teamScoreList.stream().noneMatch(teamScore -> teamScore.getTeam().equals(team))) {
             teamScoreList.add(new TeamScore(team));
         }
-    }
-
-    public TeamScore getTeamScore(Team team) {
-        Optional<TeamScore> optionalTeamScore = teamScoreList.stream()
-                .filter(teamScore -> teamScore.getTeam().equals(team)).findFirst();
-
-        return optionalTeamScore.orElse(null);
     }
 
     @Override
