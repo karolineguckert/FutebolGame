@@ -40,6 +40,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="add-maven-structure" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
@@ -329,10 +334,10 @@
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
     <state x="464" y="162" width="1030" height="842" key="SettingsEditor/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625004635663" />
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625005873332">
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2" timestamp="1625070132300">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>
-    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625005873332" />
+    <state x="555" y="263" width="806" height="525" key="Vcs.Push.Dialog.v2/0.0.1920.1053/1920.312.1366.768@0.0.1920.1053" timestamp="1625070132300" />
     <state x="727" y="214" width="462" height="623" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1625005751015">
       <screen x="0" y="0" width="1920" height="1053" />
     </state>

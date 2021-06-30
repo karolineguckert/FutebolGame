@@ -64,10 +64,10 @@ class PlayerTest {
         validateRangeException(
                 GameException.class,
                 () -> {
-                    new Player("Felipe","Atacante",101,0,4, today);
+                    new Player("Felipe","Atacante",10,0,4, today);
                 },
                 () -> {
-                    new Player("Felipe","Atacante",-1,0,4, todayPlusFiveDays);
+                    new Player("Felipe","Atacante",3,0,4, todayPlusFiveDays);
                 },
                 INVALID_DATE_MESSAGE
         );
@@ -81,7 +81,7 @@ class PlayerTest {
                     new Player("Felipe","Atacante",10,101,4,"15/12/2000");
                 },
                 () -> {
-                    new Player("Felipe","Atacante",10,101,4,"15/12/2000");
+                    new Player("Felipe","Atacante",10,-3,4,"15/12/2000");
                 },
                 INVALID_ATTRIBUTE_MESSAGE
         );
