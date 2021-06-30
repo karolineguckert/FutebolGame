@@ -2,7 +2,6 @@ package br.univali.kob.eng;
 
 import br.univali.kob.eng.game.Championship;
 import br.univali.kob.eng.game.Game;
-import br.univali.kob.eng.game.GameResult;
 import br.univali.kob.eng.game.Team;
 
 public class FutebolGameApplication {
@@ -30,9 +29,6 @@ public class FutebolGameApplication {
         championship.simulateGames();
 
         System.out.println(championship);
-
-
-
 
     }
 

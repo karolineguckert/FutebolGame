@@ -31,10 +31,18 @@ public class Championship {
         for (Game game: games) {
             GameResult result = game.simulate();
             if (result.isTied()) {
-                sumScore(game.getHomeTeam(), 1);
-                sumScore(game.getVisitorTeam(), 1);
+                TeamScore home = getTeamScore(game.getHomeTeam());
+                home.sumScore(1);
+                home.sumDraws();
+                TeamScore visitor = getTeamScore(game.getVisitorTeam());
+                visitor.sumScore(1);
+                visitor.sumDraws();
             } else {
-                sumScore(result.getWinner(), 3);
+                TeamScore winner = getTeamScore(result.getWinner());
+                winner.sumScore(3);
+                winner.sumVictories();
+                TeamScore looser = getTeamScore(result.getLooser());
+                looser.sumDefeats();
             }
         }
     }
@@ -49,11 +57,11 @@ public class Championship {
         }
     }
 
-    private void sumScore(Team team, int score) {
+    private TeamScore getTeamScore(Team team) {
         Optional<TeamScore> optionalTeamScore = teamScoreList.stream()
                 .filter(teamScore -> teamScore.getTeam().equals(team)).findFirst();
 
-        optionalTeamScore.ifPresent(teamScore -> teamScore.sumScore(score));
+        return optionalTeamScore.orElse(null);
     }
 
     @Override
